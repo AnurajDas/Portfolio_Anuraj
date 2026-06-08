@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anuraj Das — Designer</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="cur" id="cur"></div>
+<div class="cur-ring" id="curRing"></div>
+
+<!-- ===== HERO ===== -->
+<section id="hero">
+  <div class="hero-sticky">
+    <div class="hero-left-bg"></div>
+    <canvas id="scrollCanvas"></canvas>
+    <div class="canvas-fade"></div>
+    <div class="scanlines"></div>
+    <div class="hero-bot"></div>
+
+    <!-- Animated bottom blocks -->
+    <div class="hero-blocks">
+      <div class="hblock" style="--i:0"></div>
+      <div class="hblock" style="--i:1"></div>
+      <div class="hblock" style="--i:2"></div>
+      <div class="hblock" style="--i:3"></div>
+      <div class="hblock" style="--i:4"></div>
+      <div class="hblock" style="--i:5"></div>
+      <div class="hblock" style="--i:6"></div>
+      <div class="hblock" style="--i:7"></div>
+    </div>
+
+    <div class="hero-text">
+      <p class="hero-eyebrow">Portfolio 2026</p>
+      <h1 class="hero-name">
+        ANURAJ<br>
+        <span class="stroke">DAS</span>
+      </h1>
+      <div class="hero-divider"></div>
+      <p class="hero-sub">Product &amp; Visual Designer<br>UI/UX &nbsp;·&nbsp; Brand Identity &nbsp;·&nbsp; Graphic Design</p>
+      <div class="hero-tags">
+        <span class="htag">Figma</span>
+        <span class="htag">UX Research</span>
+        <span class="htag">Prototyping</span>
+        <span class="htag">Branding</span>
+      </div>
+    </div>
+
+    <div class="scroll-progress" id="scrollProgress">
+      <div class="bar" id="progressBar"></div>
+      <span class="label" id="progressLabel">SCROLL</span>
+    </div>
+    <div class="frame-counter" id="frameCounter">00 / 18</div>
+  </div>
+</section>
+
+<!-- ===== MARQUEE ===== -->
+<div class="marquee-section">
+  <div class="mq-track">
+    <span>Figma</span><span class="dot"><svg width="8" height="8" viewBox="0 0 10 10" fill="currentColor"><polygon points="5,0 10,5 5,10 0,5"/></svg></span>
+    <span>Framer</span><span class="dot"><svg width="8" height="8" viewBox="0 0 10 10" fill="currentColor"><polygon points="5,0 10,5 5,10 0,5"/></svg></span>
+    <span>Canva</span><span class="dot"><svg width="8" height="8" viewBox="0 0 10 10" fill="currentColor"><polygon points="5,0 10,5 5,10 0,5"/></svg></span>
+    <span>Video Editing</span><span class="dot"><svg width="8" height="8" viewBox="0 0 10 10" fill="currentColor"><polygon points="5,0 10,5 5,10 0,5"/></svg></span>
+    <span>Adobe Photoshop</span><span class="dot"><svg width="8" height="8" viewBox="0 0 10 10" fill="currentColor"><polygon points="5,0 10,5 5,10 0,5"/></svg></span>
+    <span>Adobe Illustrator</span><span class="dot"><svg width="8" height="8" viewBox="0 0 10 10" fill="currentColor"><polygon points="5,0 10,5 5,10 0,5"/></svg></span>
+    <span>Adobe Premiere Pro</span><span class="dot"><svg width="8" height="8" viewBox="0 0 10 10" fill="currentColor"><polygon points="5,0 10,5 5,10 0,5"/></svg></span>
+    <span>Klaviyo</span><span class="dot"><svg width="8" height="8" viewBox="0 0 10 10" fill="currentColor"><polygon points="5,0 10,5 5,10 0,5"/></svg></span>
+    <span>HTML / CSS / JS</span><span class="dot"><svg width="8" height="8" viewBox="0 0 10 10" fill="currentColor"><polygon points="5,0 10,5 5,10 0,5"/></svg></span>
+    <span>AI Video Generation</span><span class="dot"><svg width="8" height="8" viewBox="0 0 10 10" fill="currentColor"><polygon points="5,0 10,5 5,10 0,5"/></svg></span>
+    <span>Prompt Engineering</span><span class="dot"><svg width="8" height="8" viewBox="0 0 10 10" fill="currentColor"><polygon points="5,0 10,5 5,10 0,5"/></svg></span>
+    <span>Wireframing</span><span class="dot"><svg width="8" height="8" viewBox="0 0 10 10" fill="currentColor"><polygon points="5,0 10,5 5,10 0,5"/></svg></span>
+    <span>Workflow Automation</span><span class="dot"><svg width="8" height="8" viewBox="0 0 10 10" fill="currentColor"><polygon points="5,0 10,5 5,10 0,5"/></svg></span>
+    <span>Prototyping</span><span class="dot"><svg width="8" height="8" viewBox="0 0 10 10" fill="currentColor"><polygon points="5,0 10,5 5,10 0,5"/></svg></span>
+    <span>SEO</span><span class="dot"><svg width="8" height="8" viewBox="0 0 10 10" fill="currentColor"><polygon points="5,0 10,5 5,10 0,5"/></svg></span>
+    <span>UX Research</span><span class="dot"><svg width="8" height="8" viewBox="0 0 10 10" fill="currentColor"><polygon points="5,0 10,5 5,10 0,5"/></svg></span>
+    <span>Brand Identity</span><span class="dot"><svg width="8" height="8" viewBox="0 0 10 10" fill="currentColor"><polygon points="5,0 10,5 5,10 0,5"/></svg></span>
+    <!-- duplicate for seamless loop -->
+    <span>Figma</span><span class="dot"><svg width="8" height="8" viewBox="0 0 10 10" fill="currentColor"><polygon points="5,0 10,5 5,10 0,5"/></svg></span>
+    <span>Framer</span><span class="dot"><svg width="8" height="8" viewBox="0 0 10 10" fill="currentColor"><polygon points="5,0 10,5 5,10 0,5"/></svg></span>
+    <span>Canva</span><span class="dot"><svg width="8" height="8" viewBox="0 0 10 10" fill="currentColor"><polygon points="5,0 10,5 5,10 0,5"/></svg></span>
+    <span>Video Editing</span><span class="dot"><svg width="8" height="8" viewBox="0 0 10 10" fill="currentColor"><polygon points="5,0 10,5 5,10 0,5"/></svg></span>
+    <span>Adobe Photoshop</span><span class="dot"><svg width="8" height="8" viewBox="0 0 10 10" fill="currentColor"><polygon points="5,0 10,5 5,10 0,5"/></svg></span>
+    <span>Adobe Illustrator</span><span class="dot"><svg width="8" height="8" viewBox="0 0 10 10" fill="currentColor"><polygon points="5,0 10,5 5,10 0,5"/></svg></span>
+    <span>Adobe Premiere Pro</span><span class="dot"><svg width="8" height="8" viewBox="0 0 10 10" fill="currentColor"><polygon points="5,0 10,5 5,10 0,5"/></svg></span>
+    <span>Klaviyo</span><span class="dot"><svg width="8" height="8" viewBox="0 0 10 10" fill="currentColor"><polygon points="5,0 10,5 5,10 0,5"/></svg></span>
+    <span>HTML / CSS / JS</span><span class="dot"><svg width="8" height="8" viewBox="0 0 10 10" fill="currentColor"><polygon points="5,0 10,5 5,10 0,5"/></svg></span>
+    <span>AI Video Generation</span><span class="dot"><svg width="8" height="8" viewBox="0 0 10 10" fill="currentColor"><polygon points="5,0 10,5 5,10 0,5"/></svg></span>
+    <span>Prompt Engineering</span><span class="dot"><svg width="8" height="8" viewBox="0 0 10 10" fill="currentColor"><polygon points="5,0 10,5 5,10 0,5"/></svg></span>
+    <span>Wireframing</span><span class="dot"><svg width="8" height="8" viewBox="0 0 10 10" fill="currentColor"><polygon points="5,0 10,5 5,10 0,5"/></svg></span>
+    <span>Workflow Automation</span><span class="dot"><svg width="8" height="8" viewBox="0 0 10 10" fill="currentColor"><polygon points="5,0 10,5 5,10 0,5"/></svg></span>
+    <span>Prototyping</span><span class="dot"><svg width="8" height="8" viewBox="0 0 10 10" fill="currentColor"><polygon points="5,0 10,5 5,10 0,5"/></svg></span>
+    <span>SEO</span><span class="dot"><svg width="8" height="8" viewBox="0 0 10 10" fill="currentColor"><polygon points="5,0 10,5 5,10 0,5"/></svg></span>
+    <span>UX Research</span><span class="dot"><svg width="8" height="8" viewBox="0 0 10 10" fill="currentColor"><polygon points="5,0 10,5 5,10 0,5"/></svg></span>
+    <span>Brand Identity</span><span class="dot"><svg width="8" height="8" viewBox="0 0 10 10" fill="currentColor"><polygon points="5,0 10,5 5,10 0,5"/></svg></span>
+  </div>
+</div>
+
+
+<!-- ===== ABOUT ME WITH PHOTO ===== -->
+<section id="about-me" class="content" style="padding-top:6rem">
+  <div class="container">
+    <p class="s-label reveal">// 000 — The Person</p>
+  </div>
+  <div class="aboutme-wrap">
+    <!-- LEFT: Photo -->
+    <div class="am-photo-col reveal">
+      <div class="am-photo-frame" id="amPhotoFrame">
+        <div class="am-photo-placeholder" id="amPhotoPlaceholder">
+          <!-- <div class="am-upload-icon">📸</div>
+          <p class="am-upload-text">Your photo goes here</p>
+          <p class="am-upload-sub">Upload via code — replace <code>src</code> in <code>#amImg</code></p> -->
+          <img src="Me 3.png" alt="Placeholder" style="width:100%;height:100%;object-fit:cover;object-position:top center;border-radius:2px">
+        </div>
+        <img id="amImg" src="Me 3.png" alt="Anuraj Das" style="display:none;width:100%;height:100%;object-fit:cover;object-position:top center;border-radius:2px">
+        <div class="am-photo-border"></div>
+        <div class="am-photo-tag">ANURAJ DAS</div>
+        <div class="am-photo-loc"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle;margin-right:3px"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> KOLKATA, IN</div>
+      </div>
+      <!-- Decorative blobs -->
+      <div class="am-blob am-blob-1"></div>
+      <div class="am-blob am-blob-2"></div>
+    </div>
+    <!-- RIGHT: Content -->
+    <div class="am-content-col">
+      <div class="reveal">
+        <h2 class="am-heading">MEET THE<br><span class="o">DESIGNER</span><br><span style="color:var(--teal)">BEHIND</span> THE WORK</h2>
+      </div>
+      <div class="reveal" style="transition-delay:.15s">
+        <p class="am-body">Hey, I'm <strong>Anuraj Das</strong> — a Product &amp; Visual Designer from Kolkata who lives at the intersection of aesthetics and function. I have a B.Tech in Computer Science, which means I'm as comfortable reading code as I am crafting pixel-perfect interfaces.</p>
+        <p class="am-body">My toolkit spans the full design spectrum — from early-stage <span class="highlight">wireframing</span> and <span class="highlight">UX research</span>, all the way to <span class="highlight">visual branding</span>, <span class="highlight">motion</span>, and <span class="highlight">AI-powered workflows</span>. I also know my way around HTML, CSS &amp; JS — which makes developer handoffs effortless.</p>
+        <p class="am-body">Currently designing for <span class="highlight">Conversion Pro LLP</span> and contributing part-time at <span class="highlight">DSE Infotech</span> — crafting experiences that drive real results.</p>
+      </div>
+      <!-- Trait pills -->
+      <div class="am-pills reveal" style="transition-delay:.25s">
+        <span class="am-pill"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle;margin-right:5px;opacity:.7"><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3M12 17h.01"/></svg>Strategic Thinker</span>
+        <span class="am-pill"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle;margin-right:5px;opacity:.7"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>Fast Prototyper</span>
+        <span class="am-pill"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle;margin-right:5px;opacity:.7"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>Visual Storyteller</span>
+        <span class="am-pill"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle;margin-right:5px;opacity:.7"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>AI-Native</span>
+        <span class="am-pill"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle;margin-right:5px;opacity:.7"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>Dev-Friendly</span>
+        <span class="am-pill"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle;margin-right:5px;opacity:.7"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>Global Clients</span>
+      </div>
+      <!-- Mini stats -->
+      <div class="am-stats reveal" style="transition-delay:.35s">
+        <div class="am-stat"><div class="am-sn">2+</div><div class="am-sl">Years Active</div></div>
+        <div class="am-stat"><div class="am-sn o">15+</div><div class="am-sl">Tools Mastered</div></div>
+        <div class="am-stat"><div class="am-sn" style="color:var(--teal)">10+</div><div class="am-sl">Global Clients</div></div>
+        <div class="am-stat"><div class="am-sn" style="color:var(--amber)">3</div><div class="am-sl">Industries</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about" class="content">
+  <div class="container">
+    <p class="s-label reveal">// 001 — Identity</p>
+    <div class="about-layout">
+      <div class="reveal">
+        <h2 class="about-big">DESIGN<br>THAT<br><span class="o">THINKS</span><br><span class="t">& FEELS</span></h2>
+        <div class="stats-grid">
+          <div class="stat-box"><div class="stat-n">2+</div><div class="stat-l">Years Experience</div></div>
+          <div class="stat-box"><div class="stat-n o">3</div><div class="stat-l">Industries Served</div></div>
+          <div class="stat-box"><div class="stat-n a">10+</div><div class="stat-l">Global Clients</div></div>
+          <div class="stat-box"><div class="stat-n">∞</div><div class="stat-l">Curiosity Level</div></div>
+        </div>
+      </div>
+      <div class="reveal" style="transition-delay:.2s">
+        <p class="about-body">I'm a <span class="highlight">multi-disciplinary designer</span> blending creative instinct with engineering logic. My B.Tech in Computer Science means I speak fluent designer and developer — making handoffs seamless and visions real.</p>
+        <p class="about-body">Currently directing visual strategy at <span class="highlight">Conversion Pro LLP</span>, crafting campaigns that convert across global markets. Previously built end-to-end UX products for international clients on Freelancer.com.</p>
+        <p class="about-body">I believe great design is invisible — it solves problems so elegantly that users never notice the craft behind it.</p>
+        <p style="margin-top:1.5rem;font-family:'Space Mono',monospace;font-size:.65rem;letter-spacing:.25em;color:var(--teal)"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle;margin-right:4px"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> KOLKATA, WEST BENGAL — INDIA</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section id="skills" class="content">
+  <div style="position:absolute;top:50px;right:100px;width:350px;height:350px;border-radius:50%;background:radial-gradient(circle,rgba(0,196,204,.08),transparent 70%);pointer-events:none"></div>
+  <div style="position:absolute;bottom:50px;left:50px;width:200px;height:200px;border-radius:50%;background:radial-gradient(circle,rgba(232,98,10,.08),transparent 70%);pointer-events:none"></div>
+  <div class="container">
+    <p class="s-label reveal">// 002 — Toolkit</p>
+    <div class="skills-layout">
+      <div class="reveal">
+        <h2 class="skills-intro" style="font-family:'Bebas Neue',sans-serif;font-size:3.5rem;line-height:1;color:var(--text)">TOOLS<br>&amp;<br>POWERS</h2>
+        <p style="font-size:.9rem;line-height:1.7;color:var(--muted);margin-top:1rem">Every great design starts with the right tool in the right hand. Here's what's in mine.</p>
+      </div>
+      <div class="reveal" style="transition-delay:.15s">
+        <div class="skill-group">
+          <div class="sg-title">Design & Prototyping</div>
+          <div class="sg-bars">
+            <div class="sg-bar-item"><span class="sg-name">Figma</span><div class="sg-track"><div class="sg-fill" style="--w:.95"></div></div><span class="sg-pct">95%</span></div>
+            <div class="sg-bar-item"><span class="sg-name">Framer</span><div class="sg-track"><div class="sg-fill" style="--w:.82"></div></div><span class="sg-pct">82%</span></div>
+            <div class="sg-bar-item"><span class="sg-name">Wireframing</span><div class="sg-track"><div class="sg-fill" style="--w:.90"></div></div><span class="sg-pct">90%</span></div>
+            <div class="sg-bar-item"><span class="sg-name">Prototyping</span><div class="sg-track"><div class="sg-fill" style="--w:.88"></div></div><span class="sg-pct">88%</span></div>
+            <div class="sg-bar-item"><span class="sg-name">UX Research</span><div class="sg-track"><div class="sg-fill" style="--w:.82"></div></div><span class="sg-pct">82%</span></div>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="sg-title">Visual / Graphic & Video</div>
+          <div class="sg-bars">
+            <div class="sg-bar-item"><span class="sg-name">Adobe Photoshop</span><div class="sg-track"><div class="sg-fill" style="--w:.90"></div></div><span class="sg-pct">90%</span></div>
+            <div class="sg-bar-item"><span class="sg-name">Adobe Illustrator</span><div class="sg-track"><div class="sg-fill" style="--w:.85"></div></div><span class="sg-pct">85%</span></div>
+            <div class="sg-bar-item"><span class="sg-name">Adobe Premiere Pro</span><div class="sg-track"><div class="sg-fill" style="--w:.80"></div></div><span class="sg-pct">80%</span></div>
+            <div class="sg-bar-item"><span class="sg-name">Canva</span><div class="sg-track"><div class="sg-fill" style="--w:.95"></div></div><span class="sg-pct">95%</span></div>
+            <div class="sg-bar-item"><span class="sg-name">Video Editing</span><div class="sg-track"><div class="sg-fill" style="--w:.78"></div></div><span class="sg-pct">78%</span></div>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="sg-title">Development & Marketing</div>
+          <div class="sg-bars">
+            <div class="sg-bar-item"><span class="sg-name">HTML / CSS / JS</span><div class="sg-track"><div class="sg-fill" style="--w:.85"></div></div><span class="sg-pct">85%</span></div>
+            <div class="sg-bar-item"><span class="sg-name">SEO</span><div class="sg-track"><div class="sg-fill" style="--w:.80"></div></div><span class="sg-pct">80%</span></div>
+            <div class="sg-bar-item"><span class="sg-name">Klaviyo</span><div class="sg-track"><div class="sg-fill" style="--w:.75"></div></div><span class="sg-pct">75%</span></div>
+            <div class="sg-bar-item"><span class="sg-name">Workflow Automation</span><div class="sg-track"><div class="sg-fill" style="--w:.78"></div></div><span class="sg-pct">78%</span></div>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="sg-title">AI & Emerging Tools</div>
+          <div class="sg-bars">
+            <div class="sg-bar-item"><span class="sg-name">Prompt Engineering</span><div class="sg-track"><div class="sg-fill" style="--w:.88"></div></div><span class="sg-pct">88%</span></div>
+            <div class="sg-bar-item"><span class="sg-name">AI Video Generation</span><div class="sg-track"><div class="sg-fill" style="--w:.82"></div></div><span class="sg-pct">82%</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== BENTO GRID ===== -->
+<section id="bento" class="content">
+  <div class="container">
+    <p class="s-label reveal">// 003 — Strengths</p>
+  </div>
+  <div style="max-width:1200px;margin:0 auto;padding:0 4rem">
+    <div class="bento-grid reveal">
+
+      <div class="bcard bc-wide" style="background:rgba(0,196,204,.06)">
+        <div class="bc-blob" style="width:200px;height:200px;background:radial-gradient(circle,rgba(0,196,204,.15),transparent);top:-50px;right:-50px;animation-delay:0s"></div>
+        <div class="bc-icon"><svg stroke="var(--teal)" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg></div>
+        <div class="bc-title">Strategic Thinking</div>
+        <div class="bc-body">Every pixel has a purpose. I design with business goals in mind — not just aesthetics. From user journeys to conversion funnels, I think holistically.</div>
+        <span class="bc-tag">UX Strategy</span>
+        <span class="bc-tag">Conversion</span>
+        <div class="bc-num">01</div>
+      </div>
+
+      <div class="bcard bc-mid">
+        <div class="bc-blob" style="width:150px;height:150px;background:radial-gradient(circle,rgba(232,98,10,.12),transparent);bottom:-30px;right:-30px;animation-delay:1s"></div>
+        <div class="bc-icon"><svg stroke="var(--orange)" viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
+        <div class="bc-title">Rapid Iteration</div>
+        <div class="bc-body">Speed without sacrificing quality. I prototype fast, gather feedback faster, and ship with confidence.</div>
+        <span class="bc-tag o">Agile</span>
+        <span class="bc-tag o">Prototyping</span>
+        <div class="bc-num">02</div>
+      </div>
+
+      <div class="bcard bc-third">
+        <div class="bc-icon"><svg stroke="var(--teal)" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/><line x1="12" y1="2" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="22"/><line x1="2" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="22" y2="12"/></svg></div>
+        <div class="bc-title">Visual Strategy</div>
+        <div class="bc-body">Brand consistency that builds trust across every touchpoint.</div>
+        <span class="bc-tag">Branding</span>
+        <div class="bc-num">03</div>
+      </div>
+
+      <div class="bcard bc-third" style="background:rgba(232,98,10,.04)">
+        <div class="bc-icon"><svg stroke="var(--orange)" viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
+        <div class="bc-title">Technical Bridge</div>
+        <div class="bc-body">B.Tech background makes me fluent in both design and dev — no translation needed.</div>
+        <span class="bc-tag o">Dev-Ready</span>
+        <div class="bc-num">04</div>
+      </div>
+
+      <div class="bcard bc-third">
+        <div class="bc-icon"><svg stroke="var(--teal)" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg></div>
+        <div class="bc-title">Global Clients</div>
+        <div class="bc-body">Delivered work across international markets with diverse cultural contexts.</div>
+        <span class="bc-tag">International</span>
+        <div class="bc-num">05</div>
+      </div>
+
+      <div class="bcard bc-half" style="background:rgba(196,132,26,.04)">
+        <div class="bc-blob" style="width:180px;height:180px;background:radial-gradient(circle,rgba(196,132,26,.1),transparent);top:-40px;left:-40px;animation-delay:2s"></div>
+        <div class="bc-icon"><svg stroke="var(--amber)" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+        <div class="bc-title">Milwaukee Boot Co.</div>
+        <div class="bc-body">Developed a full marketing suite — static posts, B2B assets, and seasonal campaign materials that drove high engagement across global markets.</div>
+        <span class="bc-tag" style="border-color:var(--amber);color:var(--amber)">Marketing Design</span>
+        <span class="bc-tag" style="border-color:var(--amber);color:var(--amber)">B2B Campaign</span>
+        <div class="bc-num">06</div>
+      </div>
+
+      <div class="bcard bc-half">
+        <div class="bc-icon"><svg stroke="var(--teal)" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><polyline points="8 21 12 17 16 21"/></svg></div>
+        <div class="bc-title">Cross-platform Design</div>
+        <div class="bc-body">From mobile-first wireframes to desktop dashboards — I design systems that scale gracefully across every screen size and platform.</div>
+        <span class="bc-tag">Mobile</span>
+        <span class="bc-tag">Web</span>
+        <span class="bc-tag">Dashboard</span>
+        <div class="bc-num">07</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== EXPERIENCE ===== -->
+<section id="experience" class="content">
+  <div class="container">
+    <p class="s-label reveal">// 004 — Journey</p>
+    <div class="exp-grid">
+      <div class="exp-card reveal" style="border-color:rgba(0,196,204,.35);background:rgba(0,196,204,.04)">
+        <div class="exp-dot" style="background:var(--teal);box-shadow:0 0 12px rgba(0,196,204,.8);animation:dotPulse 1.8s ease-in-out infinite"></div>
+        <div class="exp-period" style="color:var(--teal)">OCT 2025 — PRESENT &nbsp;<span style="font-size:.55rem;background:rgba(0,196,204,.15);border:1px solid rgba(0,196,204,.3);padding:2px 8px;border-radius:20px;letter-spacing:.1em">PART-TIME</span></div>
+        <div class="exp-role">UI/UX Designer</div>
+        <div class="exp-company">DSE Infotech</div>
+        <div class="exp-li">Designing user interfaces for web &amp; mobile products part-time</div>
+        <div class="exp-li">Collaborating on wireframes, user flows &amp; high-fidelity mockups</div>
+      </div>
+      <div class="exp-card reveal" style="transition-delay:.1s">
+        <div class="exp-dot" style="background:var(--orange);box-shadow:0 0 12px rgba(232,98,10,.8);animation:dotPulse 1.8s ease-in-out infinite"></div>
+        <div class="exp-period" style="color:var(--orange)">OCT 2025 — PRESENT</div>
+        <div class="exp-role">Graphic Designer</div>
+        <div class="exp-company">Conversion Pro LLP</div>
+        <div class="exp-li">Directing visual strategy for global digital marketing campaigns</div>
+        <div class="exp-li">Maintaining brand standards across social media &amp; B2B deliverables</div>
+      </div>
+      <div class="exp-card reveal" style="transition-delay:.2s">
+        <div class="exp-dot" style="background:var(--orange);box-shadow:0 0 10px rgba(232,98,10,.7);"></div>
+        <div class="exp-period" style="color:var(--orange)">AUG 2025 — OCT 2025</div>
+        <div class="exp-role">UI/UX Designer (Intern)</div>
+        <div class="exp-company">IAF</div>
+        <div class="exp-li">Conducted user research &amp; wireframed complex platforms</div>
+        <div class="exp-li">Built high-fidelity prototypes using Figma</div>
+      </div>
+      <div class="exp-card reveal" style="transition-delay:.3s">
+        <div class="exp-dot" style="background:var(--amber);box-shadow:0 0 10px rgba(196,132,26,.7)"></div>
+        <div class="exp-period" style="color:var(--amber)">JAN 2025 — SEP 2025</div>
+        <div class="exp-role">UI/UX Designer</div>
+        <div class="exp-company">Freelancer.com</div>
+        <div class="exp-li">End-to-end UI/UX for diverse international clients</div>
+        <div class="exp-li">Rapid prototyping to iterate on user flows &amp; high-fidelity designs</div>
+      </div>
+      <div class="exp-card reveal" style="transition-delay:.45s;background:rgba(0,196,204,.04);border-color:rgba(0,196,204,.2)">
+        <div class="exp-dot" style="animation:none;background:var(--teal)"></div>
+        <div class="exp-period" style="color:var(--muted)">JUNE 2026</div>
+        <div class="exp-role">B.Tech CSE</div>
+        <div class="exp-company">Adamas University</div>
+        <div class="exp-li">Computer Science Engineering</div>
+        <div class="exp-li">Bridging design thinking with technical execution</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROCESS ROADMAP ===== -->
+<section id="blocks" class="content">
+  <div class="section-noise"></div>
+  <div class="container" style="margin-bottom:3rem">
+    <p class="s-label reveal">// 005 — Process</p>
+    <h2 class="reveal" style="font-family:'Bebas Neue',sans-serif;font-size:clamp(2.5rem,5vw,4rem);line-height:1;margin-top:.5rem">MY DESIGN<br><span style="color:var(--orange)">ROADMAP</span></h2>
+    <p class="reveal" style="font-size:.9rem;color:var(--muted);margin-top:1rem;max-width:480px;transition-delay:.1s">A structured journey from raw problem to polished product — every step intentional, every decision backed by research.</p>
+  </div>
+
+  <!-- Roadmap spine layout -->
+  <div class="roadmap-wrap" id="roadmapWrap">
+    <div class="rm-spine">
+      <div class="rm-fill-line" id="rmFillLine"></div>
+    </div>
+
+    <!-- STEP 01 — content LEFT, dot, empty right -->
+    <div class="rm-step rm-step-scroll rm-hidden" style="--clr:#00C4CC">
+      <div class="rm-content-left">
+        <div class="rm-phase">Phase 01 — Research</div>
+        <div class="rm-title">DISCOVER<br>&amp; AUDIT</div>
+        <p class="rm-body">Deep dive into user needs, business goals &amp; market context. Stakeholder interviews, competitor audits &amp; analytics review.</p>
+        <div class="rm-tags"><span>User Research</span><span>Interviews</span><span>Analytics</span></div>
+      </div>
+      <div class="rm-node"></div>
+      <div class="rm-empty"></div>
+    </div>
+
+    <!-- STEP 02 — empty left, dot, content RIGHT -->
+    <div class="rm-step rm-step-scroll rm-hidden" style="--clr:#E8620A">
+      <div class="rm-empty"></div>
+      <div class="rm-node"></div>
+      <div class="rm-content-right">
+        <div class="rm-phase">Phase 02 — Mapping</div>
+        <div class="rm-title">WORKFLOW &amp;<br>WIREFRAMING</div>
+        <p class="rm-body">Translating data definitions directly into layout flowcharts, conceptual screen splits, and structural low-fidelity blueprints.</p>
+        <div class="rm-tags"><span>Personas</span><span>Journey Map</span><span>IA</span></div>
+      </div>
+    </div>
+
+    <!-- STEP 03 — content LEFT, dot, empty right -->
+    <div class="rm-step rm-step-scroll rm-hidden" style="--clr:#C4841A">
+      <div class="rm-content-left">
+        <div class="rm-phase">Phase 03 — Creation</div>
+        <div class="rm-title">VISUAL DESIGN<br>ARCHITECTURE</div>
+        <p class="rm-body">Constructing complete functional mock-ups and customised brand styling components in Figma, using unified style frameworks.</p>
+        <div class="rm-tags"><span>High-Fi UI</span><span>Design System</span><span>Branding</span></div>
+      </div>
+      <div class="rm-node"></div>
+      <div class="rm-empty"></div>
+    </div>
+
+    <!-- STEP 04 — empty left, dot, content RIGHT -->
+    <div class="rm-step rm-step-scroll rm-hidden" style="--clr:#00C4CC">
+      <div class="rm-empty"></div>
+      <div class="rm-node"></div>
+      <div class="rm-content-right">
+        <div class="rm-phase">Phase 04 — Motion</div>
+        <div class="rm-title">PROTOTYPING &amp;<br>INTERACTION</div>
+        <p class="rm-body">Wiring fluid interactive links, micro-interactions, and component variants to validate look, feel and seamless transition behaviour.</p>
+        <div class="rm-tags"><span>Framer</span><span>Usability Test</span><span>A/B Testing</span></div>
+      </div>
+    </div>
+
+    <!-- STEP 05 — content LEFT, dot, empty right -->
+    <div class="rm-step rm-step-scroll rm-hidden" style="--clr:#E8620A">
+      <div class="rm-content-left">
+        <div class="rm-phase">Phase 05 — Assembly</div>
+        <div class="rm-title">FRONTEND<br>REALIZATION</div>
+        <p class="rm-body">Deploying semantic HTML5 templates, clean CSS variable grids, and performance-tuned runtime scripts to convert ideas into clean code.</p>
+        <div class="rm-tags"><span>HTML/CSS/JS</span><span>Dev Handoff</span><span>QA</span></div>
+      </div>
+      <div class="rm-node"></div>
+      <div class="rm-empty"></div>
+    </div>
+
+    <!-- STEP 06 — empty left, dot, content RIGHT -->
+    <div class="rm-step rm-step-scroll rm-hidden" style="--clr:#C4841A">
+      <div class="rm-empty"></div>
+      <div class="rm-node"></div>
+      <div class="rm-content-right">
+        <div class="rm-phase">Phase 06 — Validation</div>
+        <div class="rm-title">TEST &amp;<br>ITERATE</div>
+        <p class="rm-body">Real-user testing sessions, heatmap analysis and iterative loops until the experience is airtight and conversion-ready.</p>
+        <div class="rm-tags"><span>Testing</span><span>Analytics</span><span>Iteration</span></div>
+      </div>
+    </div>
+
+    <!-- STEP 07 — content LEFT, dot, empty right -->
+    <div class="rm-step rm-step-scroll rm-hidden" style="--clr:#00C4CC">
+      <div class="rm-content-left">
+        <div class="rm-phase">Phase 07 — Launch</div>
+        <div class="rm-title">DELIVER &amp;<br>MONITOR</div>
+        <p class="rm-body">Dev-ready handoff, documentation &amp; post-launch monitoring. The design ships — and the cycle begins again with fresh data.</p>
+        <div class="rm-tags"><span>Handoff</span><span>Docs</span><span>Post-launch</span></div>
+      </div>
+      <div class="rm-node"></div>
+      <div class="rm-empty"></div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ===== PROJECTS ===== -->
+<section id="projects" class="content">
+  <div class="container">
+    <p class="s-label reveal">// 006 — Work</p>
+    <h2 class="reveal" style="font-family:'Bebas Neue',sans-serif;font-size:clamp(2.5rem,5vw,4rem);line-height:1;margin-top:.5rem">SELECTED<br><span style="color:var(--orange)">PROJECTS</span></h2>
+    <p class="reveal" style="font-size:.9rem;color:var(--muted);margin-top:1rem;max-width:500px;transition-delay:.1s">A curated selection of work across branding, UI/UX, and digital campaigns. Each project is a story of problem-solving and craft.</p>
+  </div>
+
+  <div class="projects-grid">
+
+    <!-- Project Card 1 -->
+    <div class="proj-card reveal" style="transition-delay:.1s">
+      <div class="proj-thumb">
+        <div class="proj-thumb-placeholder">
+          <img src="Hotel_Project_img.png" alt="Project Thumbnail" style="width:100%;height:100%;object-fit:cover;border-radius:8px"/>
+          <!-- <svg class="proj-thumb-icon" viewBox="0 0 24 24" fill="none" stroke="rgba(0,196,204,.5)" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" width="52" height="52"><circle cx="13.5" cy="6.5" r="0.5" fill="currentColor"/><circle cx="17.5" cy="10.5" r="0.5" fill="currentColor"/><circle cx="8.5" cy="7.5" r="0.5" fill="currentColor"/><circle cx="6.5" cy="12.5" r="0.5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 011.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></svg> -->
+        </div>
+        <div class="proj-overlay">
+          <a href="https://anurajdas.github.io/Velora_Hotel/#" class="proj-link-btn" target="_blank" rel="noopener">
+            <span>View Project</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+          </a>
+        </div>
+        <div class="proj-num">01</div>
+      </div>
+      <div class="proj-info">
+        <div class="proj-cat">Brand Identity</div>
+        <div class="proj-title">Veloria Hotel — Luxury Stays</div>
+        <p class="proj-desc">A premium hotel website featuring a full booking experience, room showcase, and immersive luxury aesthetic. Built with clean HTML/CSS and smooth interactions.</p>
+        <div class="proj-tags">
+          <span>Figma</span><span>Branding</span><span>UI Design</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project Card 2 -->
+    <div class="proj-card reveal" style="transition-delay:.2s">
+      <div class="proj-thumb">
+        <div class="proj-thumb-placeholder" style="background:linear-gradient(135deg,rgba(232,98,10,.15),rgba(20,5,5,1))">
+          <!-- <svg class="proj-thumb-icon" viewBox="0 0 24 24" fill="none" stroke="rgba(232,98,10,.5)" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" width="52" height="52"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg> -->
+           <img src="Ovr_Sound_img.png" alt="Project Thumbnail" style="width:100%;height:100%;object-fit:cover;border-radius:8px"/>
+        </div>
+        <div class="proj-overlay">
+          <a href="https://anurajdas.github.io/OVR_SOUND/" class="proj-link-btn" target="_blank" rel="noopener">
+            <span>View Project</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+          </a>
+        </div>
+        <div class="proj-num">02</div>
+      </div>
+      <div class="proj-info">
+        <div class="proj-cat">UI/UX Design</div>
+        <div class="proj-title">OVRSOUND — Headphones That Break Reality</div>
+        <p class="proj-desc">A bold, edgy product landing page for a futuristic headphone brand. Features animated stats, product showcase, and a dark high-energy aesthetic built for Gen Z audiences.</p>
+        <div class="proj-tags">
+          <span>UX Research</span><span>Prototyping</span><span>Framer</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project Card 3 -->
+    <div class="proj-card reveal" style="transition-delay:.3s">
+      <div class="proj-thumb">
+        <div class="proj-thumb-placeholder" style="background:linear-gradient(135deg,rgba(196,132,26,.15),rgba(20,5,5,1))">
+          <!-- <svg class="proj-thumb-icon" viewBox="0 0 24 24" fill="none" stroke="rgba(196,132,26,.5)" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" width="52" height="52"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg> -->
+            <img src="Veriton_Mockup_Img.png" alt="Project Thumbnail" style="width:100%;height:100%;object-fit:cover;border-radius:8px"/>
+        </div>
+        <div class="proj-overlay">
+          <a href="https://anurajdas.github.io/B2B_Veriton/" class="proj-link-btn" target="_blank" rel="noopener">
+            <span>View Project</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+          </a>
+        </div>
+        <div class="proj-num">03</div>
+      </div>
+      <div class="proj-info">
+        <div class="proj-cat">B2B WEB DESIGN</div>
+        <div class="proj-title">Veriton Technical Solutions — Corporate Website</div>
+        <p class="proj-desc">A professional B2B corporate website for an industrial solutions company. Covers services, vision, and lead generation with a clean, trust-driven design tailored for enterprise clients.</p>
+        <div class="proj-tags">
+          <span>Video Editing</span><span>AI Generation</span><span>Campaign</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project Card 4 — Full Width Featured -->
+    <div class="proj-card proj-featured reveal" style="transition-delay:.4s">
+      <div class="proj-thumb">
+        <div class="proj-thumb-placeholder" style="background:linear-gradient(135deg,rgba(0,196,204,.12),rgba(20,5,5,1))">
+          <!-- <svg class="proj-thumb-icon" viewBox="0 0 24 24" fill="none" stroke="rgba(0,196,204,.5)" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" width="60" height="60" style="font-size:3rem"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> -->
+             <img src="graphic work.png" alt="Project Thumbnail" style="width:100%;height:100%;object-fit:cover;border-radius:8px"/>
+          <p style="font-family:'Space Mono',monospace;font-size:.6rem;letter-spacing:.2em;color:rgba(0,196,204,.6);margin-top:.5rem;text-transform:uppercase">Featured Project</p>
+        </div>
+        <div class="proj-overlay">
+          <a href="https://drive.google.com/drive/folders/11wu2L6hpF8E0_nparhx2wDSoen969N_s?usp=sharing" class="proj-link-btn" target="_blank" rel="noopener">
+            <span>View Case Study</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+          </a>
+        </div>
+        <div class="proj-num">04</div>
+      </div>
+      <div class="proj-info">
+        <!-- <div class="proj-cat" style="color:var(--teal)">Featured Case Study</div> -->
+        <div class="proj-title">Graphics, Motion & Campaign Creatives</div>
+        <p class="proj-desc">A collection of posters, banners, social media creatives, brand collaterals, promotional videos, motion graphics, email templates, and end-to-end campaign creatives crafted with strong visual hierarchy and consistent brand identity across every platform.
+Campaign Design
+End-to-end creatives across social media, display ads, and print — built around a unified brand message with platform-specific adaptations.</p>
+        <div class="proj-tags">
+          <span>Full Case Study</span><span>End-to-End Design</span><span>Impact</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact" class="content">
+  <div class="ring-deco"></div>
+  <div class="container">
+    <p class="s-label reveal">// 006 — Connect</p>
+    <div class="contact-inner">
+      <div class="reveal">
+        <h2 class="contact-big">LET'S<br><span class="t">BUILD</span><br><span class="stroke">SOMETHING</span></h2>
+      </div>
+      <div class="reveal" style="transition-delay:.2s">
+        <div class="contact-items">
+          <div class="c-item">
+            <div class="c-type">Email</div>
+            <a class="c-val" href="mailto:anurajdas71@gmail.com">anurajdas71@gmail.com</a>
+          </div>
+          <div class="c-item">
+            <div class="c-type">Phone</div>
+            <a class="c-val" href="tel:+919351899916">+91 93518 99916</a>
+          </div>
+          <div class="c-item">
+            <div class="c-type">LinkedIn</div>
+            <a class="c-val" href="https://linkedin.com/in/anuraj-das-b27a1a230" target="_blank">anuraj-das-b27a1a230</a>
+          </div>
+          <div class="c-item">
+            <div class="c-type">Location</div>
+            <span class="c-val">Kolkata, West Bengal — India</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <span class="footer-left">© 2025 ANURAJ DAS</span>
+  <span class="footer-center">ANURAJ DAS</span>
+  <span class="footer-right">KOLKATA · INDIA</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
